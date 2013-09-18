@@ -1,0 +1,25 @@
+{
+  "name": "poker.js",
+  "version": "0.0.1",
+  "description": "A poker game library and hand evaluator",
+  "homepage": "http://github.com/chenosaurus/poker.js",
+  "keywords": ["poker", "games"],
+  "author": "David Chen <chenosaurus@gmail.com>",
+  "contributors": [],
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/chenosaurus/poker.js.git"
+  },
+  "dependencies": {
+    "colors": "0.6.2"
+  },
+  "scripts": {
+    "test": "node test/speedtest.js"
+  },
+  "devDependencies": {
+  },
+  "main": "./lib/Poker.js",
+  "engines": {
+    "node": ">= 0.6.0"
+  }
+}
