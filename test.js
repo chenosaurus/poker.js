@@ -3,13 +3,14 @@ var Hand = require("./lib/core/Hand");
 var Constants = require("./lib/core/Constants");
 var Deck = require("./lib/core/Deck");
 var OFCHand = require("./lib/games/ofc/OFCHand");
+var OFCPosition = require("./lib/games/ofc/OFCPosition");
 var Royalties = require("./lib/games/ofc/Royalties");
 var Utils = require("./lib/Utils");
 
 he.on("ready", ready)
 
 var TAG = "TEST";
-var LOOPS = 50000;
+var LOOPS = 20000;
 
 
 function ready() {
@@ -21,6 +22,9 @@ function ready() {
   var top = ["qc"];
   var mid = ["kh"];
   var bot = ["6s", "th", "3c"];
+  var opTop = ["ah"];
+  var opMid = ["as", "2h"];
+  var opBot = ["qd", "jc", "9s"];
   var draw = "5h";
 
   testHands(top, mid, bot, draw);
